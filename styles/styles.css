@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Roboto|Open+Sans');
+
+html, body {
+	/*Overrides auto margin & paddings by browsers*/
+	margin: 0;
+	padding: 0;
+
+	height: 100%;
+	width: 100%;
+}
+
+/*------------------------ HOME PAGE ------------------------*/
+.nav_bar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 8.02%;
+  background-color: #071F82;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5% 0 0.5% 0;
+    text-align: right; /*puts nav bar on right*/
+
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    font-size: 110%;
+}
+
+.nav_bar li {
+    display: inline-block;
+    padding: 0.784%;
+}
+
+.nav_bar li a {
+  text-decoration: none;
+  color: white;  
+  padding: 5px 0; /*underline's distance from text. must keep as pixels*/
+  background: linear-gradient(to left, white, white) no-repeat bottom left;
+  background-size: 0% 8%; /*width of underline*/
+  transition: 0.5s;
+}
+
+.nav_bar li a.currentPage {
+  background-size: 100% 8%;
+}
+
+.nav_bar li a.otherPages:hover { /*makes underline under words*/
+  background-size: 100% 8%;
+}
+
+.titleSection .nav_bar {
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.titleSection {
+	position: relative;
+  top: 0;
+  left: 0;
+  height: 95%;
+  width: 100%;
+  overflow: hidden;
+  background: url('../images/phillySky.jpg'); /*source: http://cliparts.co/cliparts/8iE/bk7/8iEbk76rT.jpg */
+  background-position: center center;
+  background-size: cover;
+}
+
+#coverImage { 
+	height: auto;
+    width: auto;
+    width: 100%;
+    height: 90%;
+}
+
+.homeTitle { 
+   font-family: 'Droid Sans', sans-serif;
+   font-weight: 800;
+   font-size: 500%;
+   color: white;
+   position: absolute;
+   width: 80%; /*width of appleFestTitle div = 80% of width of its container (titleSection)*/
+   text-align: center;
+
+   left: 50%; /*Moves left edge of appleFestTitle to 50% of containing div (titleSection)*/
+   top: 67%;
+   -moz-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%); /*Translate x: offsets by 50% of width of bounding box (
+   element for which style is being applied- appleFestTitle box)*/
+}
+
+.homeSubtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 40%;
+  color: white;
+}
+
+.mainPageSection {
+  padding: 5% 11.8%;
+}
+
+.mainPageImage {
+  margin-top: 3%;
+  width: 100%;
+}
+
+.about {
+  background-color: #f7f7f7;
+}
+
+
+.transportation {
+  background-color: #f7f7f7;
+}
+
+.title {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+  font-size: 300%;
+  color: rgb(102, 102, 102);
+  text-align: center;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 110%;
+  color: rgb(128, 128, 128);
+}
+
+.areaList{
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 110%;
+  color: rgb(128, 128, 128);
+  text-align: center;
+
+}
+
+.description {
+  margin-top: 3%;
+}
+
+.contactDescription {
+  margin-top: 3%;
+  font-size: 150%;
+  text-align: center;
+}
+
+#googleMap { /*Google map showing where Apple Fest is*/
+   width: 100%;
+   height: 400px;
+   background-color: rgb(102, 102, 102);
+ }
+
+
+
+/*------------------------ FOOD PAGE ------------------------*/
+.foodTitleSection {
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  background: url('../images/cider.jpg'); /*https://www.flickr.com/photos/106103661@N02/21406193973/in/album-72157657274645113/*/
+  background-position: center center;
+  background-size: cover;
+}
+
+.attorneyList p {
+	padding: 5% 20% 3%;
+	color: rgb(80, 80, 80);
+  text-align: center;
+}
+
+.nextLine {
+  display: block;
+  margin-top: 1%;
+}
+
+.attorneyItem {
+	display: block;
+    overflow: hidden;
+    background: rgba(206, 206, 206, 0.15);
+    width: 80%;
+    margin: 3% 10%;
+}
+
+.attorneyItem .title {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    color: rgb(88, 88, 88);
+    width: 40%;
+    text-align: left;
+    padding: 7% 5% 2%;
+    display: block;
+    float: left;
+}
+
+.attorneyImage {
+    width: 30%;
+    float: left;
+    
+}
+
+.attorneyItem p {
+    padding: 0 5% 0;
+    width: 40%;
+    display: block;
+    float: left;
+}
+
+
+
+.practicesItem {
+  display: block;
+    overflow: hidden;
+    background: rgba(206, 206, 206, 0.15);
+    width: 80%;
+    margin: 3% 10%;
+}
+
+.practicesItem .title {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    color: rgb(88, 88, 88);
+    width: 40%;
+    text-align: left;
+    padding: 7% 5% 2%;
+    display: block;
+    float: left;
+    height: 50%;
+}
+
+
+.practicesItem p {
+    padding: 0% 5% 0%;
+    width: 40%;
+    display: block;
+    float: right;
+    line-height: 1.5em;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    p {
+      font-size: 40%;
+    }
+    .map img {
+      width: 100%;
+    }
+    .map ul {
+      margin-top: 85%;
+      margin-bottom: 10%;
+      margin-left: 0;
+      padding-left: 5%;
+    }
+    .map li {
+      margin: 10px, 0;
+    }
+    .title {
+      font-size: 200%;
+    }
+    
+    .attorneyTitle{
+      font-size: 60%;
+    }
+      .attorneyItem .title {
+        font-size: 1em;
+        padding: 7% 5% 1%;
+    }
+    .attorneyItem p {
+        padding: 0 2% 0;
+        width: 40%;
+        font-size: 0;
+    }
+    .practicesTitle{
+      font-size: 60%;
+    }
+    .practicesItem .title {
+        font-size: 1em;
+        padding: 7% 5% 1%;
+    }
+    .practicesItem p {
+        padding: 0 2% 0;
+        width: 40%;
+    }
+    .tg{
+      font-size: 20%;
+    }
+}
+
+
