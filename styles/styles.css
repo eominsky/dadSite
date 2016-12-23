@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=oboto|Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans');
 
 html, body {
 	/*Overrides auto margin & paddings by browsers*/
 	margin: 0;
 	padding: 0;
-
 	height: 100%;
 	width: 100%;
 }
@@ -15,7 +13,7 @@ html, body {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 8.02%;
+  height: 8.03%;
   background-color: #071F82;
 }
 
@@ -24,9 +22,7 @@ html, body {
     margin: 0;
     padding: 0.5% 0 0.5% 0;
     text-align: right; /*puts nav bar on right*/
-
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
     font-size: 110%;
 }
 
@@ -63,7 +59,7 @@ html, body {
 	position: relative;
   top: 0;
   left: 0;
-  height: 63%;
+  height: 75%;
   width: 100%;
   overflow: hidden;
   background: url('../images/phillySky.jpg'); /*source: http://cliparts.co/cliparts/8iE/bk7/8iEbk76rT.jpg */
@@ -84,15 +80,14 @@ html, body {
    font-size: 450%;
    color: white;
    position: absolute;
-   width: 80%; /*width of appleFestTitle div = 80% of width of its container (titleSection)*/
+   width: 80%; /*width of homeTitle div = 80% of width of its container (titleSection)*/
    text-align: center;
-
-   left: 50%; /*Moves left edge of appleFestTitle to 50% of containing div (titleSection)*/
+   left: 50%; /*Moves left edge of homeTitle to 50% of containing div (titleSection)*/
    top: 70%;
    -moz-transform: translateX(-50%) translateY(-50%);
    -webkit-transform: translateX(-50%) translateY(-50%);
    transform: translateX(-50%) translateY(-50%); /*Translate x: offsets by 50% of width of bounding box (
-   element for which style is being applied- appleFestTitle box)*/
+   element for which style is being applied- homeTitle box)*/
 }
 
 .homeSubtitle {
@@ -208,7 +203,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 2em;
-    color: #071F82;/*rgb(88, 88, 88);*/
+    color: #071F82;
     width: 50%;
     text-align: left;
     padding: 2% 5% 2%;
@@ -229,9 +224,23 @@ p {
 
 /*------------------------ Responsive Design ------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
+    .nav_bar {
+      height: 5.06%;
+    }
+    .nav_bar ul {
+      font-weight: 300;
+      font-size: 80%;
+    }
+    .titleSection {
+      max-height: 50%;
+    }
     p {
       font-size: 40%;
+    }
+
+    .homeTitle {
+      font-size: 200%;
     }
 
     .title {
@@ -247,8 +256,8 @@ p {
     }
     .attorneyItem p {
         padding: 0 2% 0;
-        width: 40%;
-        font-size: 0;
+        width: 60%;
+        font-size: 40%;
     }
     .practicesTitle{
       font-size: 60%;
@@ -259,7 +268,7 @@ p {
     }
     .practicesItem p {
         padding: 0 2% 0;
-        width: 40%;
+        width: 93%;
     }
     .tg{
       font-size: 20%;
